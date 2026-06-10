@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nabila | Portfolio</title>
+
+  <!-- CSS: gunakan relative path tanpa leading slash -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Font / favicon etc -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // format init baru
+  emailjs.init({ publicKey: "BSPVBZ61WSoengWjm" });
+</script>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" data-testid="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" data-testid="nav-logo">
+                <h2>Nabila Khairun Nisa</h2>
+            </div>
+            <ul class="nav-menu" data-testid="nav-menu">
+                <li><a href="#home" data-testid="nav-home">Home</a></li>
+                <li><a href="#about" data-testid="nav-about">About</a></li>
+                <li><a href="#skills" data-testid="nav-skills">Skills</a></li>
+                <li><a href="#portfolio" data-testid="nav-portfolio">Portfolio</a></li>
+                <li><a href="#experience" data-testid="nav-experience">Experience</a></li>
+                <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" data-testid="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" data-testid="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" data-testid="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-testid="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Nabila</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Information Systems Student</h2>
+                    <p class="hero-description">
+                        Passionate about using technology to solve real-world problems. 
+                        Specializing in <strong>programming and data-driven projects.</strong>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" data-testid="contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary" data-testid="projects-btn">
+                            <i class="fas fa-folder-open"></i>
+                            View Projects
+                        </a>
+                    </div>
+                    <div class="hero-social" data-testid="hero-social">
+                        <a href="https://github.com/nabilaaaakn" target="_blank" data-testid="github-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nabilaaaakn" target="_blank" data-testid="linkedin-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/nabilaaaakn" target="_blank" data-testid="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-testid="hero-image">
+                    <div class="image-container">
+                        <!-- Ganti dengan foto Nabila di folder assets/img/ -->
+                        <img src="assets/img/nabila-profile.png" alt="Nabila Khairun Nisa" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-testid="about-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-testid="about-text">
+                    <p class="about-intro">
+                        Hi! I’m a Information Systems student at Universitas Bakrie, passionate about using technology to solve real-world problems.
+                        I’m especially passionate about <strong>programming and data-driven projects.</strong> 
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item" data-testid="highlight-ml">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>Machine Learning & Data Analysis</h4>
+                                <ul>
+                                    <li>Heart Disease Risk Classification: built a model to classify patient risk using Random Forest</li>
+                                    <li>Sentiment Analysis on Product Reviews: performed preprocessing, vectorization, and model evaluation using Support Vector Machine</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item" data-testid="highlight-apps">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>App Development</h4>
+                                <ul>
+                                    <li>MyCup: a coffee ordering mobile app built with Flutter & Dart</li>
+                                    <li>Vroom Desktop App: Java-based system for car rental management</li>
+                                    <li>Paluhangku Dekstop App:  Visual Basic-based  system for Anti-Bullying</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item" data-testid="highlight-gis">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <h4>GIS & Mapping</h4>
+                                    <p>Designed thematic maps with QGIS using geojson and spatial data</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item" data-testid="highlight-systems">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>System Analysis & ERP</h4>
+                                <ul>
+                                    <li>Simulated inventory & CRM modules using Odoo ERP</li>
+                                    <li>Created UI mockups and system diagrams using Figma, UML</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats" data-testid="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Organizations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-testid="skills-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="skills-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-testid="programming-skills">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Development & Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-testid="skill-python">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-java">
+                            <span>Java</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-dart">
+                            <span>Dart</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-vb">
+                            <span>Visual basic</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-vb">
+                            <span>MySQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-testid="database-skills">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-testid="skill-mysql">
+                            <span>Google Colab</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-odoo">
+                            <span>Canva</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-office">
+                            <span>Microsoft Office</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-qgis">
+                            <span>QGIS</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-figma">
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-net">
+                            <span>Netbeans</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-vs">
+                            <span>Visual Studio</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-vs_code">
+                            <span>Visual Studio Code</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 67%"></div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category" data-testid="soft-skills">
+                    <div class="skill-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills-tags">
+                        <span class="skill-tag" data-testid="tag-leadership">Leadership</span>
+                        <span class="skill-tag" data-testid="tag-communication">Communication</span>
+                        <span class="skill-tag" data-testid="tag-teamwork">Teamwork</span>
+                        <span class="skill-tag" data-testid="tag-problem-solving">Problem Solving</span>
+                        <span class="skill-tag" data-testid="tag-time-management">Time Management</span>
+                        <span class="skill-tag" data-testid="tag-public-speaking">Public Speaking</span>
+                        <span class="skill-tag" data-testid="tag-critical-thinking">Critical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" data-testid="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="portfolio-title">Featured Projects</h2>
+            <div class="portfolio-filters" data-testid="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-testid="filter-all">All</button>
+                <button class="filter-btn" data-filter="ml" data-testid="filter-ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="mobile" data-testid="filter-mobile">Mobile</button>
+                <button class="filter-btn" data-filter="desktop" data-testid="filter-desktop">Desktop</button>
+                <button class="filter-btn" data-filter="gis" data-testid="filter-gis">QGIS</button>
+            </div>
+            
+            <div class="portfolio-grid" data-testid="portfolio-grid">
+                <!-- ML Projects -->
+                <div class="portfolio-item ml" data-testid="project-heart-disease">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/heart.png" target="_blank">
+                            <img src="assets/img/heart.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-heartbeat" ></i> -->
+                        </a>
+                        
+                    </div>
+                    <div class="project-content">
+                        <h3>Heart Disease Risk Classification</h3>
+                        <p>Built a machine learning model to predict heart disease risk levels using the Random Forest algorithm. 
+                            The project involved data preprocessing, feature engineering, model training, and evaluation using metrics like accuracy, precision, recall, and confusion matrix. 
+                            Collaborated with a team to refine feature selection strategies for better predictive performance.
+                        </p>
+                        
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>🗓️ June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item ml" data-testid="project-sentiment">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/MyXL.png" target="_blank">
+                            <img src="assets/img/MyXL.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                        <!-- <i class="fas fa-comments"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sentiment Analysis</h3>
+                        <p>Developed a text classification system to analyze sentiment polarity from app review data. Performed preprocessing (tokenization, stopword removal), TF-IDF vectorization, and scaled features before training a Support Vector Machine (SVM). 
+                            Delivered the entire project as an interactive tutorial during a mini bootcamp on applied machine learning.
+                        </p>
+                        <div class="project-tags">
+                            <span>Text Mining</span>
+                            <span>SVM</span>
+                            <span>TF-IDF</span>
+                            <span>🗓️ June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Projects -->
+                <div class="portfolio-item mobile" data-testid="project-mycup">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/MyCup.png" target="_blank">
+                            <img src="assets/img/MyCup.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-coffee"></i> -->
+                        </a>
+                    
+                    </div>
+                    <div class="project-content">
+                        <h3>MyCup Coffee App</h3>
+                        <p>Developed a mobile cafe ordering application inspired by Kopi Kenangan, using Flutter and Dart. Built key features such as Welcome, Sign Up, Login, Forgot Password, Order Menu, and History pages. 
+                        Ensured smooth navigation and user experience, while integrating team code into a fully functional mobile app deployed on real devices.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Mobile</span>
+                            <span>🗓️ Sept 2024 - Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Projects -->
+                <div class="portfolio-item desktop" data-testid="project-vroom">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/Vroom.png" target="_blank">
+                            <img src="assets/img/Vroom.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-car"></i> -->
+
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vroom Car Rental System</h3>
+                        <p>Created a desktop car rental management system using Java and NetBeans. Applied object-oriented programming principles including inheritance, encapsulation, and abstraction. Collaborated in a 5-person team, splitting responsibilities by features and using version control. Separated business logic from GUI for cleaner and more maintainable code.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>NetBeans</span>
+                            <span>OOP</span>
+                            <span>🗓️ May - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item desktop" data-testid="project-paluhangku">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/paluhangku.png" target="_blank">
+                            <img src="assets/img/paluhangku.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                        <!-- <i class="fas fa-comments"></i> -->
+                        </a>
+                        <!-- <i class="fas fa-shield-alt"></i> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Paluhangku Anti-Bullying</h3>
+                        <p>Designed and built a desktop application focused on bullying prevention using Visual Basic in Visual Studio. Developed key features including News, Education, Forum, and Consultation with full database connectivity and menu navigation. Solely responsible for coding all major functionalities and integrating user input features for reporting and psychological support.</p>
+                        <div class="project-tags">
+                            <span>Visual Basic</span>
+                            <span>Desktop App</span>
+                            <span>Database</span>
+                            <span>🗓️ March - July 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIS Projects -->
+                <div class="portfolio-item gis" data-testid="project-emergency">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/clincing.png" target="_blank">
+                            <img src="assets/img/clincing.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-map-marker-alt"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Emergency Shelter Coverage</h3>
+                        <p>This buffer analysis illustrates the 950-meter service area around designated emergency shelters in Cilincing District, Jakarta. It integrates population raster data to highlight potential coverage gaps and assist in emergency preparedness planning by showing which areas fall within accessible zones.</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                            <span>Spatial Analysis</span>
+                            <span>Buffer Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gis" data-testid="project-venice">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/ferryTerminal.png" target="_blank">
+                            <img src="assets/img/ferryTerminal.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-ship"></i> -->
+
+                        </a>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Ferry Terminal Service Area</h3>
+                        <p>This map presents a 2-kilometer service area around ferry terminals in Venice, visualizing nearby accommodations and service routes. It supports transportation analysis by identifying accessible zones, clipped areas, and the overall reachability of ferry infrastructure throughout the city.</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                            <span>Service Area Analysis</span>
+                            <span>HOT Export Tool</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item gis" data-testid="project-landslide">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/landslide.png" target="_blank">
+                            <img src="assets/img/landslide.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-mountain"></i> -->
+
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landslide Risk Map</h3>
+                        <p>This map visualizes landslide vulnerability levels across Bandung City by overlaying three key parameters: rainfall intensity, slope gradient, and geological structure. The map categorizes areas into five risk levels ranging from Very Low to Very High, supporting disaster risk management and mitigation strategies.</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                            <span>Risk Analysis</span>
+                            <span>Thematic Map</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ini tanda awawl project -->
+                <div class="portfolio-item gis" data-testid="project-worship">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/distribusiMap.png" target="_blank">
+                            <img src="assets/img/distribusiMap.png" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-praying-hands"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Worship Places Distribution</h3>
+                        <p>This map displays the spatial distribution of worship places—including mosques, churches, temples, and prayer rooms—across 11 districts in Depok City. It provides a visual reference of religious facility accessibility and density within administrative boundaries using geospatial analysis.</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                            <span>Thematic Map</span>
+                            <span>HOT Export Tool</span>
+                            <span>OpenStreetMap</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ini tanda akhir project -->
+
+                <!-- ini tanda awawl project -->
+                <div class="portfolio-item mobile" data-testid="project-worship">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/"  target="_blank"> <!-- setelah / terakhir taro nama file gambarnya-->
+                            <img src="assets/img/" style="border-radius: 20px;" width="290px" height="215px"  > <!-- setelah / terakhir taro nama file gambarnya-->
+                            <!-- <i class="fas fa-praying-hands"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gassss Rides!</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div class="project-tags">
+                            <span>Mobile App</span>
+                            <span>Design UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ini tanda akhir project -->
+
+                <!-- ini tanda awawl project -->
+                <div class="portfolio-item mobile" data-testid="project-worship">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/" target="_blank">
+                            <img src="assets/img/" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-praying-hands"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Moovio Mobile </h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> <!-- ini buat deskripsinya -->
+                        <div class="project-tags">
+                            <span>Mobile App</span> <!-- ini buat kategorinya-->
+                            <span>Design UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ini tanda akhir project -->
+
+                <!-- ini tanda awawl project -->
+                <div class="portfolio-item gis" data-testid="project-worship">
+                    <div class="project-image">
+                        <a href="file:///C:/Users/arg/Documents/porto_nabila/assets/img/" target="_blank">
+                            <img src="assets/img/" style="border-radius: 20px;" width="290px" height="215px"  >
+                            <!-- <i class="fas fa-praying-hands"></i> -->
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Analysis and Buffer Analysis</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ini tanda akhir project -->
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" data-testid="experience-section">
+        <div class="container">
+            <h2 class="section-title" data-testid="experience-title">Experience & Education</h2>
+            
+            <div class="experience-tabs" data-testid="experience-tabs">
+                <button class="tab-btn active" data-tab="work" data-testid="tab-work">Work Experience</button>
+                <button class="tab-btn" data-tab="organization" data-testid="tab-organization">Organizations</button>
+                <button class="tab-btn" data-tab="education" data-testid="tab-education">Education</button>
+            </div>
+
+            <div class="experience-content">
+                <!-- Work Experience -->
+                <div class="tab-content active" id="work" data-testid="work-content">
+                    <div class="timeline">
+                        <div class="timeline-item" data-testid=" Wisma-Habibie-Ainun">
+                            <div class="timeline-date">Sept 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Archiving & Digital Support Intern </h3>
+                                <h4> Wisma Habibie Ainun</h4>
+                                <p>During my internship, I contributed to the development and improvement of the archiving and inventory system to ensure records were organized, accessible, and aligned with company standards. I was responsible for executing the archiving of physical and digital assets, maintaining their accuracy, consistency, and long-term usability. Additionally, I supported the client relations, operations, and social media teams by assisting with digital tasks, content preparation, asset organization, and event management.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-testid="work-assistant-lecturer-vp">
+                            <div class="timeline-date">Mar 2025 - Jun 2025</div>
+                            <div class="timeline-content">
+                                <h3>Assistant Lecturer Visual Programming</h3>
+                                <h4>Bakrie University</h4>
+                                <p>I delivered a series of structured Visual Basic programming sessions for second-semester students using Visual Studio. The curriculum covered essential concepts including control structures, arrays, and object-oriented programming. I guided students in building Windows Forms desktop applications integrated with MySQL databases and implementing full CRUD operations. As a culmination of the learning experience, I supervised their group-based final projects, where students presented functional applications addressing real-world problems through live demonstrations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-testid="work-assistant-lecturer-pa">
+                            <div class="timeline-date">Sep 2024 - Dec 2024</div>
+                            <div class="timeline-content">
+                                <h3>Assistant Lecturer Programming and Algorithm</h3>
+                                <h4>Bakrie University</h4>
+                                <p>Conducted Python programming sessions for first-semester students. Mentored students in machine learning applications with projects achieving up to 80% accuracy, deployed using Streamlit.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="work-tutor">
+                            <div class="timeline-date">Aug 2022 - Mar 2023</div>
+                            <div class="timeline-content">
+                                <h3>Private Tutor</h3>
+                                <h4>Aini Bimbingan Belajar</h4>
+                                <p>Provided private tutoring in Mathematics and English for elementary and junior high school students, leading to significant improvements in academic performance and test scores. I designed personalized and engaging lesson plans tailored to each student’s learning style and level. For preschool and early elementary students, I created creative, age-appropriate materials to support foundational skills in reading, writing, and basic arithmetic, making the learning process both effective and enjoyable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organizations -->
+                <div class="tab-content" id="organization" data-testid="organization-content">
+                    <div class="timeline">
+                        <div class="timeline-item" data-testid="org-ieee">
+                            <div class="timeline-date">Aug 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Head of Academic Department</h3>
+                                <h4>Information Systems Student Association</h4>
+                                <p>As Head of the Academic Department, I lead the planning and implementation of various academic programs, including seminars, workshops, and tutoring initiatives. I supervise and monitor division members to ensure each program runs effectively, while also providing direction, coordination, and evaluation to align activities with the organization’s goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="org-ieee">
+                            <div class="timeline-date">Mar 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Research and Development Staff</h3>
+                                <h4>IEEE Student Branch Bakrie University</h4>
+                                <p>Since March 2025, I have been actively involved as a Research and Development Staff at IEEE Student Branch Bakrie University. I delivered a Python-based sentiment analysis session during ByteCamp, an internal bootcamp aimed at enhancing members' technical skills. I also conducted light research on emerging technologies to support content development and internal discussions. Beyond that, I contributed research-based recommendations for upcoming workshops, discussions, and mini project initiatives.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="org-digistar">
+                            <div class="timeline-date">Mar 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Event Ranger</h3>
+                                <h4>Digital Application Club - Digistar Club by Telkom Indonesia</h4>
+                                <p>As an Event Ranger at the Digital Application Club since March 2025, I have helped organize various digital events, including workshops, talk shows, and online learning sessions. I served as the Master of Ceremony for DigiTalks #1, a live Instagram event that engaged tech communities in real-time discussions. In addition, I coordinated DigiCourse #1, leading the event’s execution and promotion efforts, which successfully attracted over 200 participants.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="org-hmsi">
+                            <div class="timeline-date">Aug 2024 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Treasurer - Academic Department</h3>
+                                <h4>Information Systems Student Association Bakrie University</h4>
+                                <p>Since August 2024, I have served as the Treasurer in the Academic Department of the Information Systems Student Association (HMSI). In this role, I am responsible for budgeting, managing fund distribution, and monitoring financial transactions for departmental programs. I ensure transparency through detailed financial reporting, and my dedication to organizational activities earned me recognition as the most active member in the department.</p><br>
+                                <span>🏅 Award: Most Active Member – HMSI (2024/2025)</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="org-formula-e">
+                            <div class="timeline-date">Jun 2023 & Jun 2025</div>
+                            <div class="timeline-content">
+                                <h3>Crowd Control Crew</h3>
+                                <h4>Jakarta E-Prix (Formula E)</h4>
+                                <p>I contributed as a Crowd Control Crew member at the Formula E Jakarta E-Prix in both 2023 and 2025. My role involved validating over 500 e-tickets, managing crowd flow, and ensuring a smooth ticket exchange experience for more than 10,000 attendees. By working closely with fellow crew members, I was able to quickly address on-site challenges and help maintain a safe, orderly environment during this international motorsport event.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="tab-content" id="education" data-testid="education-content">
+                    <div class="timeline">
+                        <div class="timeline-item" data-testid="edu-university">
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Information Systems</h3>
+                                <h4>Bakrie University</h4>
+                                <p>Currently pursuing Information Systems degree with focus on programming, data analysis, and system development.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-testid="edu-highschool">
+                            <div class="timeline-date">2019 - 2022</div>
+                            <div class="timeline-content">
+                                <h3>High School - Science Major</h3>
+                                <h4>SMA Negeri 6 Kota Depok</h4>
+                                <p>Graduated with Science major, building strong foundation in mathematics and analytical thinking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications" data-testid="certifications">
+                        <h3>Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item" data-testid="cert-python">
+                                <i class="fas fa-certificate"></i>
+                                <span>Memulai Pemrograman dengan Python - Dicoding</span>
+                            </div>
+                            <div class="cert-item" data-testid="cert-visualization">
+                                <i class="fas fa-certificate"></i>
+                                <span>Belajar Dasar Visualisasi Data - Dicoding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+  <section id="contact" class="contact" data-testid="contact-section">
+    <div class="container">
+      <h2 class="section-title" data-testid="contact-title">Let's Connect</h2>
+      <p class="contact-subtitle">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+      
+      <div class="contact-content">
+        <div class="contact-info" data-testid="contact-info">
+          <div class="contact-item" data-testid="contact-email">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:knnabila2@gmail.com">knnabila2@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item" data-testid="contact-location">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="contact-socials" data-testid="contact-socials">
+            <h4>Follow me</h4>
+            <div class="social-links">
+              <a href="https://github.com/nabilaaaakn" target="_blank" data-testid="social-github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/nabilaaaakn" target="_blank" data-testid="social-linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://instagram.com/nabilaaaakn" target="_blank" data-testid="social-instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container" data-testid="contact-form-container">
+          <form class="contact-form" id="contactForm" data-testid="contact-form">
+            <div class="form-group" data-testid="form-group-name">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required data-testid="input-name">
+            </div>
+
+            <div class="form-group" data-testid="form-group-email">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required data-testid="input-email">
+            </div>
+
+            <div class="form-group" data-testid="form-group-subject">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required data-testid="input-subject">
+            </div>
+
+            <div class="form-group" data-testid="form-group-message">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required data-testid="textarea-message"></textarea>
+            </div>
+
+            <!-- ⚠️ onclick DIHAPUS -->
+            <button type="submit" class="btn btn-primary" data-testid="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <p data-testid="footer-text">&copy; 2025 Nabila Khairun Nisa. From Your Younger Brother <span class="heart">❤️</span> With Fried Rice And A Cup Water At Night.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
